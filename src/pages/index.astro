@@ -1,17 +1,19 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Vortex Refrigeração Industrial"
+  description="Projetos, instalação e manutenção de sistemas de refrigeração industrial."
+>
+  <main class="mx-auto max-w-7xl px-6 py-20">
+    <h1 class="text-5xl font-bold">
+      Vortex Refrigeração Industrial
+    </h1>
+
+    <p class="mt-6 max-w-2xl text-lg text-gray-600">
+      Especialistas em refrigeração industrial, câmaras frias,
+      chillers, VRF e projetos personalizados.
+    </p>
+  </main>
+</BaseLayout>
