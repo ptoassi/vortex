@@ -1,16 +1,11 @@
-:root {
+:root{
 
-    --primary: #0057B8;
-    --primary-dark: #003E87;
+    --primary:#0B2E4F;
+    --primary-dark:#0E4E87;
+    --secondary:#1D4D72;
 
-    --secondary: #2C2C2C;
+    --accent:#F58220;
 
-    --background: #FFFFFF;
-
-    --surface: #F8F9FA;
-
-    --text: #1A1A1A;
-
-    --text-light: #6B7280;
+    --gray:#F4F6F8;
 
 }

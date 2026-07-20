@@ -1,11 +1,77 @@
-<footer class="border-t py-10">
+---
+import Container from "../ui/Container.astro";
+---
 
-  <div class="mx-auto max-w-7xl px-6">
+<footer class="bg-[#0E4E87] text-white py-12">
 
-    <p class="text-sm text-slate-600">
-      © {new Date().getFullYear()} Vortex Refrigeração Industrial.
-    </p>
+  <Container>
 
-  </div>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div>
+
+        <h3 class="font-bold text-xl">
+
+          Vortex Refrigeração Industrial
+
+        </h3>
+
+        <p class="mt-4 text-slate-300">
+
+          Especialistas em refrigeração industrial.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold">
+
+          Contato
+
+        </h4>
+
+        <ul class="space-y-2 mt-4 text-slate-300">
+
+          <li>(41) xxxx-xxxx</li>
+
+          <li>contato@vortexfrig.com</li>
+
+          <li>Curitiba • PR</li>
+
+        </ul>
+
+      </div>
+
+      <div>
+
+        <h4 class="font-semibold">
+
+          Links
+
+        </h4>
+
+        <ul class="space-y-2 mt-4">
+
+          <li><a href="/">Home</a></li>
+
+          <li><a href="/empresa">Empresa</a></li>
+
+          <li><a href="/contato">Contato</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="border-t border-slate-700 mt-10 pt-6 text-center text-sm text-slate-400">
+
+      © {new Date().getFullYear()} Vortex Refrigeração Industrial
+
+    </div>
+
+  </Container>
 
 </footer>
