@@ -1,0 +1,110 @@
+---
+import Container from "./ui/Container.astro";
+
+import {hero} from "@content/home";
+
+import heroImage from "@assets/hero/hero-placeholder.webp";
+import Button from "@components/ui/Button.astro";
+---
+
+<section id="home" class="relative overflow-hidden bg-[#08233D] text-white">
+
+    <div class="absolute inset-0 bg-gradient-to-r
+from-[#08233D]
+via-[#0B2E4F]/95
+to-[#0B2E4F]/60"></div>
+
+    <Container>
+
+        <div class="relative min-h-screen flex items-center">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+
+<span
+        class="inline-flex rounded-full bg-[#F58220] px-4 py-2 text-sm font-medium">
+
+Especialistas em Refrigeração Industrial
+
+</span>
+
+                    <h1
+                            class="mt-8 text-5xl lg:text-6xl font-bold leading-tight">
+
+                        Projetos de Refrigeração Industrial com Máxima Eficiência
+
+                    </h1>
+
+                    <p
+                            class="mt-8 text-xl text-slate-300 leading-8">
+
+                        Desenvolvemos soluções completas em refrigeração industrial para frigoríficos, laticínios,
+                        centros logísticos, alimentos, bebidas e diversos segmentos da indústria.
+
+                    </p>
+
+                    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+
+                        <a href="https://wa.me/5541991127580?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+                           target="_blank" rel="noopener noreferrer"
+                           class="hidden lg:inline-flex rounded-lg bg-[#F58220] px-5 py-3 text-white font-semibold">
+                            Solicitar orçamento
+                        </a>
+
+                        <Button href="#servicos" variant="secondary">Conheça nossos serviços</Button>
+
+                    </div>
+                    <div class="mt-12 grid grid-cols-3 gap-6">
+
+                        <div>
+
+                            <p class="text-4xl font-bold text-[#F58220]">
+                                20+
+                            </p>
+
+                            <p class="text-sm text-slate-300">
+                                Anos de experiência
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-4xl font-bold text-[#F58220]">
+                                500+
+                            </p>
+
+                            <p class="text-sm text-slate-300">
+                                Projetos realizados
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hidden lg:flex justify-end">
+
+                    <img
+
+                            src={heroImage.src}
+
+                            alt="Refrigeração Industrial"
+
+                            class="w-full max-w-xl rounded-2xl shadow-2xl"
+
+                            loading="eager"
+
+                    />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </Container>
+
+</section>

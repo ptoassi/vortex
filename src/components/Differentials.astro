@@ -1,0 +1,79 @@
+---
+const diferenciais = [
+    {
+        number: "01",
+        title: "Equipe Especializada",
+        description:
+            "Profissionais experientes em projetos, instalação e manutenção de sistemas de refrigeração industrial."
+    },
+    {
+        number: "02",
+        title: "Projetos Personalizados",
+        description:
+            "Cada solução é desenvolvida conforme as necessidades específicas de cada cliente e processo produtivo."
+    },
+    {
+        number: "03",
+        title: "Atendimento Ágil",
+        description:
+            "Suporte técnico rápido e acompanhamento em todas as etapas do projeto."
+    },
+    {
+        number: "04",
+        title: "Tecnologia e Eficiência",
+        description:
+            "Equipamentos modernos que reduzem consumo de energia e aumentam a produtividade."
+    }
+];
+---
+
+<section id="empresa" class="bg-[#0F3155] py-24">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center max-w-3xl mx-auto mb-20">
+
+            <span class="uppercase tracking-widest text-[#ff7f1f] font-semibold">
+                Por que escolher a Vortex
+            </span>
+
+            <h2 class="mt-4 text-5xl font-bold text-white">
+                Diferenciais que fazem a diferença
+            </h2>
+
+            <p class="mt-6 text-blue-100 text-lg">
+                Mais de duas décadas entregando soluções eficientes para empresas
+                que precisam de desempenho, confiabilidade e segurança.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            {
+                diferenciais.map((item) => (
+
+                        <div class="bg-[#173D63] rounded-2xl p-10 hover:bg-[#1E4D7C] transition duration-300">
+
+                        <span class="text-6xl font-black text-[#ff7f1f] opacity-30">
+                            {item.number}
+                        </span>
+
+                            <h3 class="mt-4 text-2xl font-bold text-white">
+                                {item.title}
+                            </h3>
+
+                            <p class="mt-5 text-blue-100 leading-7">
+                                {item.description}
+                            </p>
+
+                        </div>
+
+                ))
+            }
+
+        </div>
+
+    </div>
+
+</section>

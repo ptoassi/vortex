@@ -1,0 +1,62 @@
+---
+const projects = [
+    "/images/projects/project-1.jpg",
+    "/images/projects/project-2.jpg",
+    "/images/projects/project-3.jpg",
+    "/images/projects/project-4.jpg",
+    "/images/projects/project-5.jpg",
+    "/images/projects/project-6.jpg",
+];
+---
+
+<section id="projetos" class="py-24 bg-white">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+<span class="uppercase tracking-widest text-[#ff7f1f] font-semibold">
+Projetos
+</span>
+
+            <h2 class="text-5xl font-bold text-[#0F3155] mt-4">
+                Projetos Realizados
+            </h2>
+
+            <p class="text-gray-600 mt-6 max-w-3xl mx-auto">
+                Conheça alguns dos projetos executados pela Vortex para empresas de diversos segmentos.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {
+                projects.map((img)=>(
+                        <div class="overflow-hidden rounded-2xl shadow-lg group">
+
+                            <img
+                                    src={img}
+                                    alt="Projeto"
+                                    class="w-full h-72 object-cover group-hover:scale-110 transition duration-500"
+                            />
+
+                        </div>
+                ))
+            }
+
+        </div>
+
+        <div class="text-center mt-12">
+
+            <a
+                    href="https://wa.me/5541991127580?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer"
+                    class="inline-block bg-[#ff7f1f] hover:bg-[#f06f0c] text-white font-semibold px-8 py-4 rounded-xl transition">
+                Solicitar Orçamento
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

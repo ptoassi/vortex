@@ -1,0 +1,48 @@
+---
+const clients = [
+    "Cliente 01",
+    "Cliente 02",
+    "Cliente 03",
+    "Cliente 04",
+    "Cliente 05",
+    "Cliente 06"
+];
+---
+
+<section id="clientes" class="py-20 bg-[#F8FAFC]">
+
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-14">
+
+<span class="uppercase tracking-widest text-[#ff7f1f] font-semibold">
+Clientes
+</span>
+
+            <h2 class="text-5xl font-bold text-[#0F3155] mt-4">
+                Empresas que confiam na Vortex
+            </h2>
+
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+            {
+                clients.map((client)=>(
+
+                        <div class="h-32 rounded-xl bg-white border border-gray-200 flex items-center justify-center shadow-sm hover:shadow-lg transition">
+
+<span class="text-gray-400 font-semibold">
+{client}
+</span>
+
+                        </div>
+
+                ))
+            }
+
+        </div>
+
+    </div>
+
+</section>
